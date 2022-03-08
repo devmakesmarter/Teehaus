@@ -1,0 +1,284 @@
+            * {
+                box-sizing: border-box;
+            }
+            
+            html {
+                font-size: 16px;
+            }
+            
+            body {
+                background-color: black;
+                font-family: Helvetica, Arial, Helvetica, sans-serif;
+                opacity: 0.9;
+                font-size: 1.4rem;
+            }
+            
+            @media (max-width:800px) {
+                body {}
+            }
+            /* Here Start the Header Section */
+            
+            header {
+                display: flex;
+                color: seashell;
+                height: auto;
+                /*
+                padding-left: 0.6rem;
+                padding-right: 0.6rem;
+                */
+            }
+            
+            .header {
+                top: 0;
+                display: flex;
+                color: seashell;
+                justify-content: space-between;
+                flex-direction: row;
+                flex-wrap: wrap;
+                position: fixed;
+                width: 100%;
+                background-color: black;
+                z-index: 500;
+                margin-bottom: 2rem;
+            }
+            
+            #headerlogo {
+                margin-top: 1rem;
+                height: 3.1rem;
+            }
+            
+            #headernavul {
+                display: inline-block;
+                text-decoration: underline;
+                margin: 1rem;
+            }
+            
+            #headernavul a {
+                font-family: Helvetica, Arial, Helvetica, sans-serif;
+                color: seashell;
+                font-size: 1.4rem;
+                margin: 0.5rem;
+            }
+            /*Here ends the Header Section */
+            /* Here is the Start the Content Secton */
+            
+            .container {
+                border: 0rem;
+                margin-top: 5rem;
+            }
+            
+            #containerforimage {
+                display: flex;
+                margin-top: 0rem;
+                background-image: url(/Resources/Images/img-mission-background.webp);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                height: 44rem;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            @media screen and (max-width:600px) {
+                #containerforimage {
+                    height: 25rem;
+                    margin-top: 12rem;
+                }
+            }
+            
+            #containerforcontent {
+                display: flex;
+                background-color: black;
+                height: 10rem;
+                z-index: 10;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                flex-direction: column;
+            }
+            
+            #containerforcontent h2 {
+                color: seashell;
+            }
+            
+            #containerforcontent h4 {
+                color: seashell;
+            }
+            
+            #h5formobile {
+                color: seashell;
+                display: none;
+            }
+            
+            @media screen and (max-width:600px) {
+                #containerforcontent {
+                    height: 5rem;
+                }
+                #containerforcontent h2 {
+                    font-size: 2rem;
+                    margin-top: 0.4rem;
+                    margin-bottom: 0.4rem;
+                    padding: 0.2rem;
+                }
+                #containerforcontent h4 {
+                    color: seashell;
+                    display: none;
+                }
+                #h5formobile {
+                    color: seashell;
+                    display: block;
+                    margin-top: 0.4rem;
+                    margin-bottom: 0.4rem;
+                    padding: 0.4rem;
+                }
+            }
+            
+            .sectiontwo {
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+            }
+            
+            #containertea {
+                display: flex;
+                height: 5rem;
+                margin: 5rem;
+                padding: 0rem;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            
+            #containertea h2 {
+                color: seashell;
+            }
+            
+            #containertea h4 {
+                color: seashell;
+            }
+            
+            @media screen and (max-width:600px) {
+                #containertea {
+                    height: 8rem;
+                }
+            }
+            
+            .containerforimagesmonth {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                flex-shrink: 3;
+            }
+            
+            #image {}
+            
+            #image img {
+                max-width: 23rem;
+                max-height: 25rem;
+                border: 1rem;
+                margin: 1rem;
+            }
+            
+            #image p {
+                color: seashell;
+                text-align: center;
+            }
+            
+            @media screen and (max-width:600px) {
+                #image p {
+                    font-size: 2rem;
+                }
+            }
+            /* Here Starts Section Three Locations etc.  */
+            
+            #sectionthree {
+                display: flex;
+                background-image: url(/Resources/Images/img-locations-background.webp);
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                min-height: 33.25rem;
+                min-width: 100%;
+                z-index: 500;
+            }
+            
+            #sectionthree p {}
+            
+            .locationscontainer {
+                display: flex;
+                min-width: 100%;
+                height: 31.25rem;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            
+            .locationcontent {
+                margin: 0rem;
+                display: block;
+                background-color: black;
+                min-width: 10.00rem;
+                width: 16%;
+                height: 46%;
+                z-index: 100;
+                justify-content: center;
+            }
+            
+            .locationcontent:hover {
+                background-color: rgb(100, 99, 82);
+                transition-duration: 1s;
+            }
+            
+            .locationcontent h3 {
+                text-align: center;
+                color: seashell;
+            }
+            
+            .locationcontent p {
+                color: seashell;
+                text-align: center;
+            }
+            
+            #locationstext {
+                color: seashell;
+                align-items: flex-start;
+                justify-content: center;
+                z-index: 10;
+            }
+            
+            .contact {
+                display: flex;
+                height: 13rem;
+                background-color: black;
+                margin-top: 2rem;
+                justify-content: center;
+                align-content: center;
+            }
+            
+            .contactcontent {
+                color: seashell;
+            }
+            
+            .copyright {
+                display: flex;
+                justify-items: flex-start;
+                align-content: flex-start;
+            }
+            
+            .copyrightcontent {
+                color: seashell;
+                font-family: Helvetica, Arial, Helvetica, sans-serif;
+            }
+            
+            @media screen and (max-width:600px) {
+                .locationcontent {
+                    height: 35%;
+                }
+                h3 {
+                    font-size: 1rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
